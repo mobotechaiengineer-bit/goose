@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe List App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="card">
+        <div class="hero">
+          <p class="eyebrow">Flavor Journal</p>
+          <h1>Recipe List App</h1>
+          <p class="subtext">Capture your favorite dishes and keep your kitchen ideas organized.</p>
+        </div>
+
+        <form id="recipe-form" class="recipe-form">
+          <label for="recipe-name">Recipe name</label>
+          <input id="recipe-name" name="name" type="text" placeholder="e.g. Lemon Pasta" required />
+
+          <label for="recipe-description">Description</label>
+          <textarea id="recipe-description" name="description" rows="4" placeholder="Add a short note about the recipe" required></textarea>
+
+          <button type="submit">Add recipe</button>
+        </form>
+
+        <section class="recipes-section" aria-labelledby="recipes-heading">
+          <div class="section-title-row">
+            <h2 id="recipes-heading">Your recipes</h2>
+            <span id="recipe-count" class="count-pill">0 recipes</span>
+          </div>
+          <ul id="recipe-list" class="recipe-list"></ul>
+        </section>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
